@@ -1,13 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 a {
   text-decoration: none;
+  color: #101828;
 }
 ul {
   list-style-type: none;
+}
+html {
+  font-size: 0.625em;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+body {
+  text-align: center;
+  font-size: 1.6rem;
+}
+.App {
+  padding: 8vh 15vw;
+}
+.img-container {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+.hero-section {
+  display: grid;
+  place-items: center;
+  margin-bottom: 3rem;
+}
+#slack-link {
+  display: none;
+}
+ul {
+  margin-top: 2rem;
+}
+button {
+  width: 100%;
+  height: 7.6rem;
+  margin-bottom: 2rem;
+  background-color: #eaecf0;
+  border: 0.1rem solid #eaecf0;
+  border-radius: 0.8rem;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #f2f3f4;
+  border: 0.1rem solid #f2f3f4;
+}
+.social-icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.social-icons-container > span {
+  font-size: 2rem;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem 10rem;
+  width: 100vw;
+  margin-left: -15vw;
+  height: 8rem;
+}
+#zuri-icon {
+  font-size: 2rem;
+}
+#zuri-icon span {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: #e7332b;
+}
+#i4g-icon {
+  height: 8rem;
+  overflow: hidden;
+  width: 20rem;
+}
+@media only screen and (max-width: 80rem) {
+  .App {
+    padding: 9vh 10vw;
+  }
+  footer {
+    flex-direction: column;
+    height: auto;
+    gap: 3rem;
+    margin-left: -10vw;
+  }
 }
