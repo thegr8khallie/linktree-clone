@@ -22,12 +22,17 @@ const App = () => {
             rel="noopener noreferrer"
             id="twitter"
           >
-            <button id="btn__zuri">Twitter Link</button>
+            <button>Twitter Link</button>
           </a>
         </li>
         <li className="affiliate-link" id="slack-link">
-          <a href="https://" target="_blank" rel="noopener noreferrer">
-            <button id="btn__zuri">Slack Link</button>
+          <a
+            href="https://"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="slack"
+          >
+            <button>Slack Link</button>
           </a>
         </li>
         <li className="affiliate-link">
