@@ -1,5 +1,8 @@
 import { useState } from "react";
+import { FaSlack, FaTwitter, FaGithub } from 'react-icons/fa';
 import "./App.css";
+import profilePic from './assets/person2.jpg';
+import i4g from './assets/i4g.jpg'
 
 const App = () => {
   const [floatingButton, setFloatingButton] = useState()
@@ -7,10 +10,10 @@ const App = () => {
     <div className="App">
       <header className="hero-section">
         <section className="user-info">
-          <div className="img-container"><img src="" alt="" id="profile__img" /></div>
-          <h1 className="seller-name"></h1>
-          <div><a href="https://twitter.com/thgr8khallie" target="_blank" rel="noopener noreferrer" id="twitter">@thegr8khallie</a></div>
-          <div><a href="https://" target="_blank" rel="noopener noreferrer" >talk2okwundu</a></div>
+          <div className="img-container"><img src={profilePic} alt="Profile Picture" id="profile__img" /></div>
+          <h1 className="seller-name">Chiamaka Opara</h1>
+          <div><a href="https://twitter.com/thgr8khallie" target="_blank" rel="noopener noreferrer" id="twitter"><FaTwitter /> @thegr8khallie</a></div>
+          <div><a href="https://" target="_blank" rel="noopener noreferrer" ><FaSlack /> @talk2okwundu</a></div>
         </section>
       </header>
       <ul className="affiliate-links">
@@ -26,7 +29,7 @@ const App = () => {
         </li>
         <li className="affiliate-link">
           <button id="book__python">
-            <a href="https://books.zuri.team/python-for-beginners?ref_id=%3Cthegr8khallie%3E" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://books.zuri.team/python-for-beginners?ref_id=talk2okwundu" target="_blank" rel="noopener noreferrer"></a>
           </button>
         </li>
         <li className="affiliate-link">
@@ -40,8 +43,12 @@ const App = () => {
           </button>
         </li>
       </ul>
-      <div className="social-icons-container"></div>
-      <footer><div></div></footer>
+      <div className="social-icons-container"><FaSlack /> <FaGithub /></div>
+      <footer>
+        <div className="branding">Zuri<span />Internship</div>
+        <div className="branding">HNG Internship 9 frontend task</div>
+        <div className="branding"><img src={i4g} alt="Ingressive for good" /></div>
+      </footer>
     </div>
   )
 }
