@@ -1,11 +1,9 @@
-import { useState } from "react";
-import { FaSlack, FaTwitter, FaGithub } from "react-icons/fa";
+import { FaSlack, FaGithub } from "react-icons/fa";
 import "./App.css";
 import profilePic from "./assets/person2.jpg";
 import i4g from "./assets/i4g.jpg";
 
 const App = () => {
-  // const [floatingButton, setFloatingButton] = useState()
   return (
     <div className="App">
       <header className="hero-section">
