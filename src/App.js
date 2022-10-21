@@ -15,23 +15,17 @@ const App = () => {
         </section>
       </header>
       <ul className="affiliate-links">
-        <li className="affiliate-link">
+        <li className="affiliate-link" id="twitter">
           <a
             href="https://twitter.com/thegr8khallie"
             target="_blank"
             rel="noopener noreferrer"
-            id="twitter"
           >
             <button>Twitter Link</button>
           </a>
         </li>
-        <li className="affiliate-link" id="slack-link">
-          <a
-            href="https://"
-            target="_blank"
-            rel="noopener noreferrer"
-            id="slack"
-          >
+        <li className="affiliate-link" id="slack">
+          <a href="https://" target="_blank" rel="noopener noreferrer">
             <button>Slack Link</button>
           </a>
         </li>

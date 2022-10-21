@@ -42,7 +42,7 @@ body {
   place-items: center;
   margin-bottom: 3rem;
 }
-#slack-link {
+#slack {
   display: none;
 }
 ul {
