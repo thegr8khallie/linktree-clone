@@ -4,6 +4,50 @@ import profilePic from "./assets/person2.jpg";
 import i4g from "./assets/i4g.jpg";
 
 const App = () => {
+  const links = [
+    {
+      id: 1,
+      idString: "twitter",
+      href: "https://twitter.com/thegr8khallie",
+      LinkTo: "Twitter Link",
+    },
+    {
+      id: 2,
+      idString: "slack",
+      href: "https://",
+      LinkTo: "Slack link",
+    },
+    {
+      id: 3,
+      idString: "btn__zuri",
+      href: "https://training.zuri.team",
+      LinkTo: "Zuri team",
+    },
+    {
+      id: 4,
+      idString: "books",
+      href: "http://books.zuri.team",
+      LinkTo: "Zuri Books",
+    },
+    {
+      id: 5,
+      idString: "book__python",
+      href: "https://books.zuri.team/python-for-beginners?ref_id=talk2okwundu",
+      LinkTo: "Python Books",
+    },
+    {
+      id: 6,
+      idString: "pitch",
+      href: "https://background.zuri.team",
+      LinkTo: "Background checks for coders",
+    },
+    {
+      id: 7,
+      idString: "book__design",
+      href: "https://books.zuri.team/design-rules",
+      LinkTo: "Design Books",
+    },
+  ];
   return (
     <div className="App">
       <header className="hero-section">
@@ -15,65 +59,16 @@ const App = () => {
         </section>
       </header>
       <ul className="affiliate-links">
-        <li className="affiliate-link" id="twitter">
-          <a
-            href="https://twitter.com/thegr8khallie"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button>Twitter Link</button>
-          </a>
-        </li>
-        <li className="affiliate-link" id="slack">
-          <a href="https://" target="_blank" rel="noopener noreferrer">
-            <button>Slack Link</button>
-          </a>
-        </li>
-        <li className="affiliate-link">
-          <a
-            href="https://training.zuri.team"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button id="btn__zuri">Zuri Team</button>
-          </a>
-        </li>
-        <li className="affiliate-link">
-          <a
-            href="http://books.zuri.team"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button id="books">Zuri Books</button>
-          </a>
-        </li>
-        <li className="affiliate-link">
-          <a
-            href="https://books.zuri.team/python-for-beginners?ref_id=talk2okwundu"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button id="book__python">Python Books</button>
-          </a>
-        </li>
-        <li className="affiliate-link">
-          <a
-            href="https://background.zuri.team"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button id="pitch">Background checks for coders</button>
-          </a>
-        </li>
-        <li className="affiliate-link">
-          <a
-            href="https://books.zuri.team/design-rules"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button id="book__design">Design books</button>
-          </a>
-        </li>
+        {/* Links List */}
+        {links.map((i) => {
+          return (
+            <li className="affiliate-link" id={i.idString} key={i.id}>
+              <a href={i.href} target="_blank" rel="noopener noreferrer">
+                <button>{i.LinkTo}</button>
+              </a>
+            </li>
+          );
+        })}
       </ul>
       <div className="social-icons-container">
         <span>
