@@ -32,7 +32,7 @@ const App = () => {
     {
       id: 5,
       idString: "book__python",
-      href: "https://books.zuri.team/python-for-beginners?ref_id=talk2okwundu",
+      href: "https://books.zuri.team/python-for-beginners?ref_id=topboy",
       LinkTo: "Python Books",
     },
     {
@@ -53,7 +53,7 @@ const App = () => {
       <header className="hero-section">
         <section className="user-info">
           <div className="img-container">
-            <img src={profilePic} alt="Profile Picture" id="profile__img" />
+            <img src={profilePic} alt="Avatar" id="profile__img" />
           </div>
           <h1 className="seller-name">Chiamaka Opara</h1>
         </section>
