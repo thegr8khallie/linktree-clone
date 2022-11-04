@@ -95,15 +95,14 @@ footer {
 }
 @media only screen and (max-width: 80rem) {
   .App {
-    padding: 9vh 10vw;
-    /* padding: 9vh 10vw 0 10vw; */
+    padding: 9vh 10vw 0 10vw;
   }
   footer {
     flex-direction: column;
     height: auto;
     gap: 3rem;
     margin-left: -10vw;
-    /* align-items: flex-start;
-    padding: 8rem 10vw; */
+    align-items: flex-start;
+    padding: 8rem 10vw;
   }
 }
