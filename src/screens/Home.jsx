@@ -1,6 +1,5 @@
 import { FaSlack, FaGithub } from "react-icons/fa";
 import profilePic from "../assets/person2.jpg";
-import i4g from "../assets/i4g.jpg";
 
 const Home = () => {
     const links = [
@@ -77,15 +76,6 @@ const Home = () => {
                     <FaGithub />
                 </span>
             </div>
-            <footer>
-                <div id="zuri-icon">
-                    Zuri <span /> Internship
-                </div>
-                <div id="hng-icon">HNG Internship 9 frontend task</div>
-                <div id="i4g-icon">
-                    <img src={i4g} alt="Ingressive for good" />
-                </div>
-            </footer>
         </>
     )
 }
