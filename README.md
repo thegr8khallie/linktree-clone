@@ -16,4 +16,4 @@ You may also see any lint errors in the console.
 
 ## Webpage
 
-This project is hosted on [netlify](topboylinktree.netlify.app)
+This project is hosted on [netlify](https://topboylinktree.netlify.app)
