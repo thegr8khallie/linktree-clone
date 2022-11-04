@@ -17,9 +17,11 @@ const Contacts = () => {
                 <label htmlFor="email">Email</label>
                 <input type="text" id="email" placeholder="yourname@email.com" />
                 <label htmlFor="message">Message</label>
-                <textarea id="message" cols="30" rows="10" placeholder="Send me a message and I'll reply you as soon as possible..." />
-                <input type="checkbox" id="agreement" />
-                <label htmlFor="agreement">You agree to providing your data to Chiamaka Opara who may contact you.</label>
+                <textarea id="message" cols="30" rows="6" placeholder="Send me a message and I'll reply you as soon as possible..." />
+                <div className="agreement">
+                    <input type="checkbox" id="agreement" />
+                    <label htmlFor="agreement">You agree to providing your data to Chiamaka Opara who may contact you.</label>
+                </div>
                 <button type="submit" id="btn__submit">Send Message</button>
             </form>
         </section>

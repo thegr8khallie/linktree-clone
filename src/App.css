@@ -94,19 +94,6 @@ footer {
   overflow: hidden;
   width: 20rem;
 }
-@media only screen and (max-width: 80rem) {
-  .App {
-    padding: 9vh 10vw 0 10vw;
-  }
-  footer {
-    flex-direction: column;
-    height: auto;
-    gap: 3rem;
-    margin-left: -10vw;
-    align-items: flex-start;
-    padding: 8rem 10vw;
-  }
-}
 /* Contacts.jsx */
 .form-container {
   width: 60vw;
@@ -142,8 +129,13 @@ textarea {
   border-radius: 0.8rem;
   margin-bottom: 2.6rem;
 }
-input[type="checkbox"] {
-  margin: 0 1.2rem 3.4rem 0;
+/* input[type="checkbox"] {
+  align-self: flex-start;
+} */
+.agreement {
+  margin-bottom: 3.4rem;
+  display: flex;
+  gap: 1.2rem;
 }
 .name-fields {
   display: flex;
@@ -155,4 +147,35 @@ input[type="checkbox"] {
 #btn__submit {
   height: auto;
   background-color: #1570ef;
+  color: #fff;
+}
+/* Media Queries */
+@media only screen and (max-width: 76.8rem) {
+  /* Home.jsx */
+  .App {
+    padding: 9vh 10vw 0 10vw;
+  }
+  footer {
+    flex-direction: column;
+    height: auto;
+    gap: 3rem;
+    margin-left: -10vw;
+    align-items: flex-start;
+    padding: 3.2rem 10vw;
+  }
+  /* Contacts.jsx */
+  .form-container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 42rem) {
+  .name-fields {
+    flex-wrap: wrap;
+  }
+  .name-fields > div {
+    flex-basis: 100%;
+  }
+  /* .agreement {
+    align-items: flex-start;
+  } */
 }
