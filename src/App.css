@@ -115,13 +115,6 @@ input,
 textarea {
   border: 0.1rem solid #d0d5dd;
 }
-input:not([type="checkbox"]) {
-  display: block;
-  padding: 1rem;
-  border-radius: 0.8rem;
-  width: 100%;
-  margin-bottom: 2.4rem;
-}
 textarea {
   display: block;
   padding: 1.2rem;
@@ -129,9 +122,25 @@ textarea {
   border-radius: 0.8rem;
   margin-bottom: 2.6rem;
 }
-/* input[type="checkbox"] {
-  align-self: flex-start;
-} */
+input:not([type="checkbox"]) {
+  display: block;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  width: 100%;
+  margin-bottom: 2.4rem;
+}
+input:not([type="checkbox"]):focus,
+textarea:focus {
+  outline: none;
+  border: 0.1rem solid #84caff;
+}
+textarea:focus {
+  box-shadow: 0.1rem 0.2rem #1018280d, 0 0 0 0.4rem #d1e9ff;
+}
+.error-focused {
+  border: 0.1rem solid #f89687;
+  box-shadow: 0 0.1rem 0.2rem #1018280d, 0 0 0 0.4rem #ffd3cc;
+}
 .agreement {
   margin-bottom: 3.4rem;
   display: flex;
@@ -148,6 +157,17 @@ textarea {
   height: auto;
   background-color: #1570ef;
   color: #fff;
+  transition: 0.25s;
+}
+#btn__submit:hover {
+  background-color: #175cd3;
+}
+.btn__focused {
+  box-shadow: 0 0.1rem 0.2rem #1018280d, 0 0 0 0.4rem #d1e9ff;
+}
+.btn__disabled {
+  background-color: #b2ddff;
+  box-shadow: 0px 1px 2px #1018280d;
 }
 /* Media Queries */
 @media only screen and (max-width: 76.8rem) {
