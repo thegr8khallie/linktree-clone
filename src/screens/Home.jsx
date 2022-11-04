@@ -1,4 +1,5 @@
 import { FaSlack, FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import profilePic from "../assets/person2.jpg";
 
 const Home = () => {
@@ -45,6 +46,13 @@ const Home = () => {
             href: "https://books.zuri.team/design-rules",
             LinkTo: "Design Books",
         },
+        {
+            id: 8,
+            idString: "contact",
+            href: "/contact",
+            LinkTo: "Contact Me",
+        },
+
     ];
     return (
         <>
@@ -59,13 +67,23 @@ const Home = () => {
             <ul className="affiliate-links">
                 {/* Links List */}
                 {links.map((i) => {
-                    return (
-                        <li className="affiliate-link" id={i.idString} key={i.id}>
-                            <a href={i.href} target="_blank" rel="noopener noreferrer">
-                                <button>{i.LinkTo}</button>
-                            </a>
-                        </li>
-                    );
+                    if (i.idString === "contact") {
+                        return (
+                            <li className="affiliate-link" id={i.idString} key={i.id}>
+                                <Link to={i.href}>
+                                    <button>{i.LinkTo}</button>
+                                </Link>
+                            </li>
+                        );
+                    } else {
+                        return (
+                            <li className="affiliate-link" id={i.idString} key={i.id}>
+                                <a href={i.href} target="_blank" rel="noopener noreferrer">
+                                    <button>{i.LinkTo}</button>
+                                </a>
+                            </li>
+                        );
+                    }
                 })}
             </ul>
             <div className="social-icons-container">
