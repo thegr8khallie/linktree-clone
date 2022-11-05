@@ -1,11 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+h1 {
+  font-weight: 600;
+}
+:not(h1) {
+  font-weight: 400;
 }
 a {
   text-decoration: none;
@@ -133,18 +139,58 @@ input:not([type="checkbox"]):focus,
 textarea:focus {
   outline: none;
   border: 0.1rem solid #84caff;
-}
-textarea:focus {
   box-shadow: 0.1rem 0.2rem #1018280d, 0 0 0 0.4rem #d1e9ff;
 }
-.error-focused {
+/* textarea:focus {
+  box-shadow: 0.1rem 0.2rem #1018280d, 0 0 0 0.4rem #d1e9ff;
+} */
+input.error-focused:hover,
+textarea.error-focused:hover {
+  border: 0.1rem solid #f89687;
+}
+input.error-focused:focus,
+textarea.error-focused:focus {
   border: 0.1rem solid #f89687;
   box-shadow: 0 0.1rem 0.2rem #1018280d, 0 0 0 0.4rem #ffd3cc;
+}
+.error-message {
+  color: red;
+  /* margin: -2.4rem 0 2.4rem 0; */
+  font-size: 1.2rem;
+}
+input[type="checkbox"] {
+  /* display: none; */
 }
 .agreement {
   margin-bottom: 3.4rem;
   display: flex;
   gap: 1.2rem;
+}
+.agreement > div {
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.6rem;
+  border: 0.1rem solid #d0d5dd;
+  /* inactive */
+  background: #f2f4f7;
+}
+.agreement-checked {
+  border: 0.1rem solid #1570ef;
+  color: #1570ef;
+}
+.agreement-focused {
+  box-shadow: 0 0 0 0.4rem #d1e9ff;
+  border: 0.1rem solid #84caff;
+}
+.agreement > div > div {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 0.4rem;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
 }
 .name-fields {
   display: flex;
@@ -165,9 +211,9 @@ textarea:focus {
 .btn__focused {
   box-shadow: 0 0.1rem 0.2rem #1018280d, 0 0 0 0.4rem #d1e9ff;
 }
-.btn__disabled {
+#btn__submit.btn__disabled {
   background-color: #b2ddff;
-  box-shadow: 0px 1px 2px #1018280d;
+  box-shadow: 0 0.1rem 0.2rem #1018280d;
 }
 /* Media Queries */
 @media only screen and (max-width: 76.8rem) {
@@ -195,7 +241,4 @@ textarea:focus {
   .name-fields > div {
     flex-basis: 100%;
   }
-  /* .agreement {
-    align-items: flex-start;
-  } */
 }
