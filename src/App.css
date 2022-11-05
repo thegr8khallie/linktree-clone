@@ -159,7 +159,7 @@ textarea.error-focused:focus {
   font-size: 1.2rem;
 }
 input[type="checkbox"] {
-  /* display: none; */
+  display: none;
 }
 .agreement {
   margin-bottom: 3.4rem;
