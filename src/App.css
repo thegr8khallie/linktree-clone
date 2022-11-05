@@ -174,15 +174,16 @@ input[type="checkbox"] {
   border-radius: 0.6rem;
   border: 0.1rem solid #d0d5dd;
   /* inactive */
-  background: #f2f4f7;
+  background-color: #f2f4f7;
+}
+.agreement > div:hover {
+  box-shadow: 0 0 0 0.4rem #d1e9ff;
+  border: 0.1rem solid #84caff;
 }
 .agreement-checked {
   border: 0.1rem solid #1570ef;
-  color: #1570ef;
 }
 .agreement-focused {
-  box-shadow: 0 0 0 0.4rem #d1e9ff;
-  border: 0.1rem solid #84caff;
 }
 .agreement > div > div {
   width: 1.8rem;
@@ -191,6 +192,7 @@ input[type="checkbox"] {
   display: grid;
   place-items: center;
   font-size: 1rem;
+  color: #1570ef;
 }
 .name-fields {
   display: flex;
