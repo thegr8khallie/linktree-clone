@@ -79,7 +79,7 @@ const Contacts = () => {
         e.preventDefault();
         if (noErrors) {
             const userResponse = {
-                name: firstName + lastName,
+                name: firstName + ' ' + lastName,
                 email: email,
                 message: message,
             }
@@ -113,7 +113,7 @@ const Contacts = () => {
                 <p className="error-message" style={{ margin: `${errors.message ? '-2.4rem 0 2.4rem 0' : '0'}` }}>{errorMessage.message}</p>
                 <input type="checkbox" id="agreement" checked={noErrors ? checkbox : false} value={noErrors ? checkbox : false} onChange={errorHandlingFunctions.checkbox} />
                 <label htmlFor="agreement" className="agreement">
-                    <div style={{ backgroundColor: `${noErrors ? '#fff' : '#f2f4f7'}`, border: `${checkbox ? '0.1rem solid #1570ef' : '0.1rem solid #d0d5dd'}` }}><div style={{ opacity: `${checkbox ? 1 : 0}` }}><FaCheck /></div></div>
+                    <div style={{ backgroundColor: `${noErrors ? '#fff' : '#f2f4f7'}`, border: `${checkbox ? '0.1rem solid #1570ef' : '0.1rem solid #d0d5dd'}` }}><div style={{ opacity: `${checkbox && noErrors ? 1 : 0}` }}><FaCheck /></div></div>
                     <span>
                         You agree to providing your data to Chiamaka Opara who may contact you.
                     </span>

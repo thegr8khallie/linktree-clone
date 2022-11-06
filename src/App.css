@@ -141,9 +141,6 @@ textarea:focus {
   border: 0.1rem solid #84caff;
   box-shadow: 0.1rem 0.2rem #1018280d, 0 0 0 0.4rem #d1e9ff;
 }
-/* textarea:focus {
-  box-shadow: 0.1rem 0.2rem #1018280d, 0 0 0 0.4rem #d1e9ff;
-} */
 input.error-focused:hover,
 textarea.error-focused:hover {
   border: 0.1rem solid #f89687;
@@ -155,7 +152,6 @@ textarea.error-focused:focus {
 }
 .error-message {
   color: red;
-  /* margin: -2.4rem 0 2.4rem 0; */
   font-size: 1.2rem;
 }
 input[type="checkbox"] {
@@ -180,11 +176,9 @@ input[type="checkbox"] {
   box-shadow: 0 0 0 0.4rem #d1e9ff;
   border: 0.1rem solid #84caff;
 }
-.agreement-checked {
+/* .agreement-checked {
   border: 0.1rem solid #1570ef;
-}
-.agreement-focused {
-}
+} */
 .agreement > div > div {
   width: 1.8rem;
   height: 1.8rem;
