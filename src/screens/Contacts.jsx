@@ -49,6 +49,7 @@ const Contacts = () => {
             }
         },
         email: () => {
+            // eslint-disable-next-line
             const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
             const isEmailValid = emailRegex.test(email);
             if (email === '') {
