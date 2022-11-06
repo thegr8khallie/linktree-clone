@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { FaCheck } from 'react-icons/fa'
 
 const Contacts = () => {
@@ -84,6 +83,11 @@ const Contacts = () => {
                 message: message,
             }
             console.log(userResponse)
+            setFirstName('')
+            setLastName('')
+            setEmail('')
+            setMessage('')
+            setCheckbox(false)
         } else {
             return;
         }
