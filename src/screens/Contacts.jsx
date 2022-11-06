@@ -49,9 +49,16 @@ const Contacts = () => {
             }
         },
         email: () => {
+            const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            const isEmailValid = emailRegex.test(email);
             if (email === '') {
                 setErrors({ ...errors, email: true, })
                 setErrormessage({ ...errorMessage, email: 'Please enter your Email' })
+
+
+            } else if (email.length > 0 && !isEmailValid) {
+                setErrors({ ...errors, email: true, })
+                setErrormessage({ ...errorMessage, email: 'You have entered an invalid Email!' })
             } else {
                 setErrors({ ...errors, email: false, })
                 setErrormessage({ ...errorMessage, email: '' })
