@@ -72,6 +72,7 @@ button:hover {
   display: flex;
   justify-content: center;
   gap: 3rem;
+  margin-bottom: 2rem;
 }
 .social-icons-container > span {
   font-size: 2rem;

@@ -11,6 +11,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contacts />} />
       </Routes>
+      <hr />
       <footer>
         <div id="zuri-icon">
           Zuri <span /> Internship
